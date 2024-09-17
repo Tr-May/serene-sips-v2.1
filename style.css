@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f0e2c5;
 }
@@ -48,7 +51,9 @@ nav {
   text-align: center;
   margin: 20px 0;
   padding: 20px 0;
-  background-color: #49281a;
+  background-color: rgba(73, 40, 26, 0.8);
+  /* background-color: #49281a; */
+  /* opacity: .8; */
   position: sticky;
   top: 0;
 }
@@ -68,6 +73,7 @@ ul li a {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-weight: bold;
 }
 
 /* our-menu section  */
@@ -96,7 +102,7 @@ footer {
   padding: 20px 0;
   text-align: left;
 }
-.container{
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -192,13 +198,12 @@ footer a {
   font-size: 2rem;
 }
 
-
-@media screen and (max-width:768px) {
-  .container{
+@media screen and (max-width: 768px) {
+  .container {
     flex-direction: column;
     align-items: center;
   }
-  .card{
+  .card {
     width: 100%;
     margin-top: 10px;
   }
